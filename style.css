@@ -1,0 +1,76 @@
+:root{
+    --body-primary: #242222;
+    --body-seconday: #1a1a17;
+    --S-teir-block: #ff7f7f;
+    --A-teir-block: #ffbf7f;
+    --B-teir-block: #ffdf7f;
+    --C-teir-block: #ffff7f;
+    --D-teir-block: #bfff7f;
+    
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--body-primary);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+body .tierListWapper {
+    /* background-color: red; */
+    height: 70%;
+    width: 100%;
+    
+}
+body .tierListWapper #S-tier,#A-tier,#B-tier,#C-tier,#D-tier{
+    height: 20%;
+    width: 100%;
+    background-color: var(--body-seconday);
+    border: 2px solid black;
+    display: flex;
+}
+body .tierListWapper .tier img{
+    width: 10%;
+}
+body .tierListWapper .tier .teirblock{
+    width: 8%;
+    height: 100%;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body .tierListWapper #S-tier .teirblock {
+    background-color: var(--S-teir-block);
+}
+body .tierListWapper #A-tier .teirblock {
+    background-color: var(--A-teir-block);
+}
+body .tierListWapper #B-tier .teirblock {
+    background-color: var(--B-teir-block);
+}
+body .tierListWapper #C-tier .teirblock {
+    background-color: var(--C-teir-block);
+}
+body .tierListWapper #D-tier .teirblock {
+    background-color: var(--D-teir-block);
+}
+body .imagesWapper {
+    height: 30%;
+    width: 100%;
+}
+body #imagesWapper img {
+    height: 100px;
+    width: 110px;
+}
+
