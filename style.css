@@ -16,17 +16,11 @@
 }
 body {
     background-color: var(--body-primary);
-    display: flex;
-    flex-direction: column;
     height: 100vh;
-    justify-content: center;
-    align-items: center;
 }
 body .tierListWapper {
-    /* background-color: red; */
     height: 70%;
     width: 100%;
-    
 }
 body .tierListWapper #S-tier,#A-tier,#B-tier,#C-tier,#D-tier{
     height: 20%;
@@ -35,8 +29,11 @@ body .tierListWapper #S-tier,#A-tier,#B-tier,#C-tier,#D-tier{
     border: 2px solid black;
     display: flex;
 }
+body .tierListWapper .tier {
+    display: flex;
+}
 body .tierListWapper .tier img{
-    width: 10%;
+    width: 8%;
 }
 body .tierListWapper .tier .teirblock{
     width: 8%;
@@ -66,7 +63,9 @@ body .tierListWapper #D-tier .teirblock {
     background-color: var(--D-teir-block);
 }
 body .imagesWapper {
-    height: 30%;
+    display: flex;
+    background-color:#ff7f7f;
+    min-height: 30%;
     width: 100%;
 }
 body #imagesWapper img {
